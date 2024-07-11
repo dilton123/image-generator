@@ -46,10 +46,7 @@ export default function Home() {
   return (
     <div className="container max-w-2xl mx-auto p-5">
       <h1 className="py-6 text-center font-bold text-2xl">
-        Dream something with{" "}
-        <a href="https://replicate.com/stability-ai/sdxl?utm_source=project&utm_project=getting-started">
-          SDXL
-        </a>
+        Image Generator
       </h1>
 
       <form className="w-full flex" onSubmit={handleSubmit}>
@@ -59,7 +56,7 @@ export default function Home() {
           name="prompt"
           placeholder="Enter a prompt to display an image"
         />
-        <button className="button" type="submit">
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="submit">
           Go!
         </button>
       </form>
